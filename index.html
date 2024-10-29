@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clown</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eater&family=Quicksand:wght@300..700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/clown100.png" alt="logo">
+        </div>
+        <h1><strong>click the clown !</strong></h1>
+        <h2 id="level"></h2>
+        <h3 id="score"></h3>
+        <div class="div-nav">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" id="startButton">START</a></li>
+                    <li class="menu-deroulant"><a href="#">Option</a>
+                        <ul class="sous-menu">
+                            <li><a href="#">Volume</a>
+                                <div class="volume-container">
+                                    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+                                    <div class="volume-bar">
+                                        <div class="volume-fill" id="volumeFill" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-deroulant"><a href="#">Level</a>
+                                <ul class="sous-menu sous-menu2">
+                                    <li><a href="#" id="levelOne">Lvl 1</a></li>
+                                    <li><a href="#" id="levelTwo">Lvl 2 </a></li>
+                                    <li><a href="#" id="levelThree">Lvl 3 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="stopButton">LEAVE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div><img class="clown hidden" id="clown" src="./assets/images/clown150.png" alt="clown"></div>
+        <div class="start" id="start"></div>
+        <div class="reset" id="reset"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
